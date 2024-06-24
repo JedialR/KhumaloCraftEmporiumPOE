@@ -1,0 +1,118 @@
+﻿@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<div class="contact-us-page">
+    <!-- Contact Information Section -->
+    <div class="contact-info-section pt-5 full-width">
+        <div class="container">
+            <h2 class="text-center text-primary mb-5">Contact Information</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-box p-4 h-100">
+                        <h3 class="h5 text-primary">Our Contact Information</h3>
+                        <ul class="list-unstyled">
+                            <li><strong>Address:</strong></li>
+                            <li>123 Main Street</li>
+                            <li>Utopia, City</li>
+                            <li>County</li>
+                            <li>Zip code: 1234</li>
+                        </ul>
+                        <ul class="list-unstyled mt-3">
+                            <li><strong>Phone Number:</strong> +1234567890</li>
+                            <li><strong>Email Address:</strong> info@khumalocraft.co.za</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-box p-4 h-100">
+                        <h3 class="h5 text-primary">Social Media</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                            <li><a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/youraccount" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQs Section -->
+    <div class="faqs-section py-5 bg-light full-width">
+        <div class="container">
+            <div class="faq-box p-4">
+                <h2 class="display-5 text-center text-primary">FAQs</h2>
+                <div class="row mt-3">
+                    <div class="col-md-6 mb-3">
+                        <h5 class="text-primary">What payment methods do you accept?</h5>
+                        <p>We accept all major credit and debit cards.</p>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <h5 class="text-primary">How can I track my order?</h5>
+                        <p>Once your order ships, you will receive a tracking number via email.</p>
+                    </div>
+                    <!-- Add more FAQs in similar format if needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Location Section -->
+    <div class="location-section py-5 full-width">
+        <div class="container">
+            <h2 class="display-5 text-center text-primary">Our Location</h2>
+            <div class="embed-responsive embed-responsive-16by9 mb-4 mt-4">
+                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1744.6470201925348!2dYourLongitude!3dYourLatitude!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zYOUR_LATITUDE!5e0!3m2!1sen!2sus!4v1622178005625!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .contact-info-section {
+        padding-top: 80px; /* Adjust padding as needed */
+        background: #f8f9fa;
+    }
+
+    .contact-box {
+        background: white;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .faqs-section {
+        background: #f8f9fa;
+    }
+
+    .faq-box {
+        background: white;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .location-section {
+        background: url('/images/location-background.jpg') no-repeat center center;
+        background-size: cover;
+        padding: 40px 0;
+        color: white;
+    }
+
+    .embed-responsive-16by9 {
+        height: 300px;
+    }
+
+    .text-primary {
+        color: #007bff !important;
+    }
+
+    .full-width {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+    }
+</style>

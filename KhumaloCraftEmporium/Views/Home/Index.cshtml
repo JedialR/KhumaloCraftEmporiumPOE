@@ -1,0 +1,120 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Company Name and Slogan -->
+<div class="company-header text-center py-3 bg-primary text-blue full-width">
+    <h2>KhumaloCraft Emporium</h2>
+    <p class="lead">Discover unique handcrafted products from artisans around the world.</p>
+</div>
+
+<!-- Features Section -->
+<div class="features-section py-5 bg-light full-width">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="feature-box text-center">
+                    <div class="icon mb-3">
+                        <i class="fas fa-gem fa-3x text-primary"></i>
+                    </div>
+                    <h3 class="h5">Unique Designs</h3>
+                    <p>Discover one-of-a-kind handcrafted items.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="feature-box text-center">
+                    <div class="icon mb-3">
+                        <i class="fas fa-leaf fa-3x text-success"></i>
+                    </div>
+                    <h3 class="h5">Eco-Friendly</h3>
+                    <p>Products made with sustainable materials.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="feature-box text-center">
+                    <div class="icon mb-3">
+                        <i class="fas fa-shipping-fast fa-3x text-info"></i>
+                    </div>
+                    <h3 class="h5">Fast Shipping</h3>
+                    <p>Quick and reliable delivery worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Artisans Section -->
+<div class="artisans-section py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5">Meet Our Artisans</h2>
+            <p class="lead">Learn more about the talented individuals behind our handcrafted products.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="artisan-box text-center">
+                    <img src="/images/Generic user.png" alt="Artisan 1" class="img-fluid rounded-circle mb-3">
+                    <h3 class="h5">Thandiwe Mkhize</h3>
+                    <p>Thandiwe is a skilled weaver who uses sustainable materials to produce elaborate tapestries and traditional Zulu baskets. Her art is a reflection of her strong ties to the natural world and her history.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="artisan-box text-center">
+                    <img src="/images/Generic user.png" alt="Artisan 2" class="img-fluid rounded-circle mb-3">
+                    <h3 class="h5">Sipho Dlamini</h3>
+                    <p>Sipho is an expert in creating intricately carved wooden sculptures that encapsulate the spirit of African culture and animals. His paintings are renowned for their minute details and realistic emotions.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="artisan-box text-center">
+                    <img src="/images/Generic user.png" alt="Artisan 3" class="img-fluid rounded-circle mb-3">
+                    <h3 class="h5">Nomsa Ndlovu</h3>
+                    <p>Nomsa is a gifted jewelry designer who uses beads and jewels that are found locally to make gorgeous creations. Her creations combine beauty and cultural value in a contemporary interpretation of traditional African jewelry.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .hero-section {
+        background: url('/images/hero-background.jpg') no-repeat center center;
+        background-size: cover;
+        color: white;
+        padding: 100px 0; /* Adjusted padding */
+    }
+
+    .features-section {
+        margin-top: -20px; /* Adjusted margin */
+    }
+
+    .feature-box {
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background: white;
+    }
+
+    .artisans-section .artisan-box {
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background: white;
+    }
+
+    .cta-section .btn {
+        background: white;
+        color: #007bff;
+        border: 2px solid white;
+    }
+
+    .company-header {
+        padding: 20px 0;
+    }
+
+    .full-width {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+    }
+</style>

@@ -1,0 +1,49 @@
+﻿@model IEnumerable<KhumaloCraftEmporium.Models.Order>
+
+@{
+    ViewData["Title"] = "My Orders";
+    var customer = ViewBag.Customer as KhumaloCraftEmporium.Models.Customer;
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="container">
+    <h4>Orders for @customer.Name</h4>
+    @if (Model.Any())
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Order Date</th>
+                    <th>Total Amount</th>
+                    <th>Items</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model)
+                {
+                    <tr>
+                        <td>@order.ID</td>
+                        <td>@order.OrderDate.ToString("g")</td>
+                        <td>@order.TotalAmount.ToString("c")</td>
+                        <td>
+                            <ul>
+                                @foreach (var item in order.OrderItems)
+                                {
+                                    <li>@item.Product.Name - Quantity: @item.Quantity - Price: @item.Price.ToString("c")</li>
+                                }
+                            </ul>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="alert alert-info">
+            You have no orders.
+        </div>
+    }
+</div>
